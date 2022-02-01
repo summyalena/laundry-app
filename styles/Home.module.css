@@ -1,116 +1,270 @@
-.container {
-  padding: 0 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+.containerindex{
+  min-height:100vh;
+  width:100%;
+}
+.imageslider{
+  top:7.3%;
+  position:relative;
+  height:100vh;
+  width:100%;
+}
+.bg{
+  width:98.8vw;
+  height:100vh;
+  background-position: center center;
+  background-size:cover;
+  background-image: url(../public/imageone.jpg);
+  opacity:0.85; 
+}
+/* .slideshow{
+  top:11%;
+  position:relative;
+  height: 100vh;
+  width:100%;
+}
+.mainimg{
+   width:100%;
+   position: relative;
+   height:95%;
+}
+.actions{
+  position:absolute;
+} */
+.h3{
+  color:white;
+  font-weight:1000;
+  z-index:1000;
+  font-family:Roboto;
+  font-size:40px;
+  width:430px;
+  padding:60px;
+}
+.btns{
+  padding:15px;
+  color:white;
+  background:green;
+  width:160px;
+  border:none;
+  display:block;
+  border-radius:15px;
+  margin:1px auto;
+}
+.btns:hover{
+   transition:all ease-in-out 500ms;
+   background-color: white;
+   color:green;
+   border-radius:10px;
+}
+.section{
+  top:114%;
+  padding:10px;
+  position:absolute;
+  height:90vh;
+  box-sizing: border-box;
+  width:100%;
+  background-color: white;
+  margin:0 auto;
+}
+.h33{
+  margin:0 auto;
+  padding:30px 0 18px 0;
+  text-align: center;
+  font-size: 40px;
+  font-family:'Roboto';
+  font-weight:400;
+  height:15%;
+}
+.holding{
+  border-top: 1px solid rgb(245, 241, 241);
+  display:flex;
+  margin: 20px auto 0 auto;
+  width:100%;
+  height:70%;
+  justify-content: space-around;
+  padding:70px;
+}
+.one{
+  left:5px;
+  text-align: center;
+  height:100%;
+  background-color: white;
+   width:20%;
+   box-sizing:border-box;
+   box-shadow: 0 0.4px 0.6px rgba(116, 115, 115, 0.3);
+}
+.img{
+  border-radius:90px;
+}
+.h5{
+  width:100%;
+  color:darkgray;
+  display: inline-block;
+}
+.p{
+  color:rgb(95, 95, 95);
+  font-weight:200;
+  font-family:Roboto;
+}
+.img:hover{
+  opacity:0.5;
+  padding:5px;
+  transition: all ease-in-out 500ms;
+}
+.btnx{
+  background-color: rgb(141, 16, 93);
+  border-radius:100px;
+  padding:20px;
+  width:160px;
+  border:none;
+  opacity:0.85;
+  color:white;
+}
+.btncon{
+   display:flex;
+   justify-content: center;
+   margin:0 auto;
+}
+.btnx:hover{
+  padding:18px;
+   transition: all ease-in 800ms;
+   opacity:1;
+}
+.services{
+     top:214%;
+     box-sizing: border-box;
+     width:100%;
+     padding:10px;
+     background-color: hsl(0, 43%, 99%);
+     height:90vh;
+     position:absolute;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
+.servicehead{
+  display:flex;
+  margin:0 auto;
+  height:17%;
+  width:100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.h2{
+  color:rgb(37, 124, 37);
+  margin-bottom:10px;
+  font-size:55px;
+  font-weight:300;
+  padding-bottom:10px;
+  font-family:Roboto;
+  border-bottom: 1px solid lightgrey;
+  
+}
+.ps{
+  margin-top:10px;
+  color:cadetblue;
+  font-family:Roboto;
+  font-size:15px;
+}
+.servicehold{
+  display:flex;
+  margin: 10px auto 0 auto;
+  width:100%;
+  height:80%;
+  justify-content: center;
+  align-items: center;
+}
+.signup{
+  left:5px;
+  text-align: center;
+  height:80%;
+  display:flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  border-radius: 16px;
+  margin:0 auto;
+  background-color: white;
+   width:20%;
+   box-sizing:border-box;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.email{
+top:300%;
+margin:0 auto;
+position:absolute;
+border:1px solid rgb(243, 241, 241);
+height:50vh;
+padding-top:60px;
+background-color:rgb(243, 239, 239);
+justify-content: space-around;
+width:100%;
+box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+border-bottom:1px solid lightgrey;
+display:flex;
 }
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.leftemail .h22{
+  font-family:Roboto;
+  font-size:30px;
+  margin-bottom:10px;
+  color:rgb(43, 42, 42);
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.leftemail .pp{
+  color:darkgrey;
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.rightemail{
+  margin-top:40px;
 }
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.rightemail .input{
+  padding:18px 50px 18px 50px;
+  margin-right:5px;
+  border-radius:30px;
+  border:0.2px solid lightgrey;
 }
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.emailbtn{
+  padding:18px 30px 18px 30px;
+  border:none;
+  background: green;
+  color:white;
+  border-radius:60px;
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .imageslider{
+    height: 100vh;
+  }
+  .section{
+    height:220%;
+    width:100%;
+    top:100vh;
+  }
+  .section .holding{
     width: 100%;
+    padding:0;
     flex-direction: column;
+  }
+  
+  .holding .one{
+    width:100%;
+
+  }
+  .services{
+    width:100%;
+    top:320%;
+    height:100vh;
+  }
+  .servicehead{
+    width:100%;
+    height:60%;
+  }
+ .servicehold{
+   width: 100%;
+   height: 100vh;
+   flex-direction: column;
+ }
+ .servicehold .signup{
+   width:100%;
+  }
+  .email{
+    top:450%;
   }
 }

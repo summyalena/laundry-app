@@ -1,0 +1,74 @@
+.containerform{
+    height:100vh;
+    top:12%;
+    margin:0 auto;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.form{
+    margin:0 auto;
+    width:30%;
+    box-shadow: 0 5px 10px rgba(195, 196, 195, 0.6);
+    padding:20px;
+    background-color: white;
+    border-radius:25px;
+}
+.formhead{
+    text-align: center;
+    width: 100%;
+    color:green;
+    font-weight:100;
+    font-family:Roboto;
+    padding:10px;
+}
+.iinput{
+    padding:10px;
+    display: flex;
+    justify-content: center;
+}
+.input{
+ width:90%;
+ box-shadow: 0 5px 10px rgba(114, 190, 126, 0.6);
+ border:0.2px solid rgb(245, 242, 242);
+ padding:13px;
+ border-radius: 20px;
+ color:lightgray;
+ font-family: Roboto;
+}
+.checked{
+    display: flex;
+    justify-content: center;
+}
+.p{
+    font-family:Roboto;
+    font-size:12px;
+    font-weight:100;
+}
+.formbtn{
+    margin:5px auto;
+    display:flex;
+    justify-content: center;
+    padding:10px;
+}
+.createbtn{
+    padding:10px 20px;
+    color:white;
+    border-radius: 20px;
+    border:none;
+    background: green;
+}
+.signin{
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-size:13px;
+}
+@media (max-width:600px){
+    .form{
+        width:80%;
+    }
+}
