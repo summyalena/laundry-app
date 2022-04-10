@@ -5,15 +5,14 @@
     position:absolute;
     display:flex;
     justify-content: center;
-    width:100%;
+    width:97vw;
     box-sizing: border-box;
     align-items: center;
 }
 .form{
-    margin:0 auto;
-    width:30%;
+    margin: 0 auto;
     box-shadow: 0 5px 10px rgba(195, 196, 195, 0.6);
-    padding:20px;
+    padding:15px 30px 15px 30px;
     background-color: white;
     border-radius:25px;
 }
@@ -23,7 +22,7 @@
     color:green;
     font-weight:100;
     font-family:Roboto;
-    padding:10px;
+    padding:5px;
 }
 .iinput{
     padding:10px;
@@ -31,7 +30,7 @@
     justify-content: center;
 }
 .input{
- width:90%;
+ width:280px;
  box-shadow: 0 5px 10px rgba(114, 190, 126, 0.6);
  border:0.2px solid rgb(245, 242, 242);
  padding:13px;
@@ -67,8 +66,8 @@
     font-family: Roboto;
     font-size:13px;
 }
-@media (max-width:600px){
+/* @media (max-width:600px){
     .form{
-        width:80%;
+        width:100%;
     }
-}
+} */

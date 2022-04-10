@@ -1,0 +1,21 @@
+/* .container{
+    margin-left:380px;
+    display:flex;
+    flex-direction:column;
+    margin-top:100px;
+}
+
+.submitcon{
+   margin:auto;
+   
+}
+.submit:hover{
+    cursor:pointer;
+}
+
+@media only screen and (max-width:760px){
+      .container{
+          margin-left:100px;
+          overflow-y: hidden;
+      }
+} */

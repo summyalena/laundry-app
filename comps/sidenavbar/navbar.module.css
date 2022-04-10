@@ -1,0 +1,70 @@
+.navcontainer{
+    left:0;
+    width:20%;
+    box-shadow: 3px 0px 6px 0px rgba(246,246,246,0.75);
+    height:100%;
+    position:fixed; 
+    background-color: white;
+}
+.wrapper{
+    padding:10px;
+    z-index:-1;
+}
+.logo{
+     padding:5px;
+     padding-left:20px;
+     font-weight:bold;
+     text-align:center;
+     font-size:20px;
+}
+.wrapper >ul{
+    margin-top:20px;
+    text-align:left;
+    gap:20px; 
+    padding-left:10px;
+    font-size:18px;
+    font-weight:bold;
+    display:flex;
+    flex-direction: column;
+}
+.wrapper>ul>li{
+    list-style: none;
+    font-size:19px;
+    text-decoration: none;
+    opacity:0.5;
+}
+.wrapper>ul>li>a:hover{
+     color:orange;
+     transition:0.2s;
+     font-size:22px;
+     padding:2px;
+}
+.icon:hover{
+    color:blue;
+}
+@media only screen and (max-width:760px) {
+    .navcontainer{
+        width: 10%;
+        height:100%;
+    }
+    .logo > h2{
+        opacity:0;
+    }
+    .logo{
+        /* background-image:url('../public/LAUNDROMAT\(1\).jpg'); */
+        width:40px;
+        background-size: cover ;
+        height:40px;
+        padding:10px;
+        margin:10px;
+    }
+    .wrapper > ul{
+        gap: 5px;
+    }
+    .wrapper > ul > li >a:hover{
+       color:red;
+    }
+    .wrapper > ul > li>a{
+        opacity:0;
+    }
+}

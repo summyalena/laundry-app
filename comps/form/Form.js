@@ -3,9 +3,8 @@ import styles from '../form/form.module.css'
 import {useState} from 'react'
 import Loginform from '../form/loginform'
 import { useRouter } from 'next/router'
-const form =(props)=>{
-    const {Form} = props;
-    const route = useRouter()
+const form =()=>{
+    const router = useRouter();
     const [Name,setName] = useState('')
     const [number,setNumber] = useState('')
     const [password, setPassword] = useState(' ')
@@ -26,7 +25,8 @@ const form =(props)=>{
         else{
             setTimeout(() => {
                 setShowForm(false) 
-                route.push("/login") 
+                router.push("/login") 
+ 
             }, 500);
             
         }
@@ -35,21 +35,22 @@ const form =(props)=>{
         <> 
 
          {showForm ? (
+                 
              <div className={styles.containerform}>
 <form className={styles.form} onSubmit={onSubmit}>
 <div className={styles.formhead}>
     <h3>Sign Up</h3>
     </div>  
     {/* adding mapping here */}
-    { Form.map ((item) => <>
+    {/* { Form.map ((item) => <> */}
     <div className={styles.iinput}>
-        <input value={item.name} type='text' className={styles.input} onChange={(e)=>setName(e.target.value)} placeholder='Name' required/>
+        <input value={Name} type='text' className={styles.input} onChange={(e)=>setName(e.target.value)} placeholder='Name' required/>
     </div>
     <div className={styles.iinput}>
-        <input value={item.RegNumber} type='number' className={styles.input} onChange={(e)=>setNumber(e.target.value)} placeholder='Registration Number'/>
+        <input value={number} type='number' className={styles.input} onChange={(e)=>setNumber(e.target.value)} placeholder='Registration Number' required/>
     </div>
     <div className={styles.iinput}>
-        <input value={item.password} type='password' onChange={(e)=>setPassword(e.target.value)} className={styles.input} placeholder='Password' required/>
+        <input value={password} type='password' onChange={(e)=>setPassword(e.target.value)} className={styles.input} placeholder='Password' required/>
     </div>
  <div className={styles.checked}>
      <input value={checkbox} type='checkbox' onChange={(e)=>setCheckbox(e.currentTarget.checked)} required/> <p className={styles.p}>i read and agree to <a>Terms & Conditions</a></p>
@@ -60,15 +61,14 @@ const form =(props)=>{
      <div className={styles.signin}>
          <p>Already have an account? <Link href='/login'><a>Sign in</a></Link></p>
      </div>   
-      </> 
-    )
-}
 </form>
 </div> 
-
-)  :  (
-   <Loginform RegNumber={RegNumber} password={password} />   )  }
-   </>
+         )
+       :  (
+   <Loginform RegNumber={number} password={password} />   )  }
+   {/* </>
+    ) */}
+     </>  
     )
 }
     async function getStaticProps(context){

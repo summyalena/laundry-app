@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import styles from ''
-const Contact = () => {
-    return ( 
-        <div>
-          
-        </div>
-     );
+import React from 'react'
+
+
+function ContactUs() {
+  return (
+    <div>Contact Us</div>
+  )
 }
- 
-export default Contact
+
+export default ContactUs

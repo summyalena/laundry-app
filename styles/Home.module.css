@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 
 .containerindex{
   min-height:100vh;
   width:100%;
 }
 .imageslider{
-  top:7.3%;
+ top:5.8%;
   position:relative;
   height:100vh;
   width:100%;
@@ -17,7 +17,7 @@
   background-size:cover;
   background-image: url(../public/imageone.jpg);
   opacity:0.85; 
-}
+} */
 /* .slideshow{
   top:11%;
   position:relative;
@@ -32,7 +32,7 @@
 .actions{
   position:absolute;
 } */
-.h3{
+/* .h3{
   color:white;
   font-weight:1000;
   z-index:1000;
@@ -186,9 +186,9 @@
   background-color: white;
    width:20%;
    box-sizing:border-box;
-}
+} */
 
-.email{
+/* .email{
 top:300%;
 margin:0 auto;
 position:absolute;
@@ -267,4 +267,4 @@ display:flex;
   .email{
     top:450%;
   }
-}
+} */
