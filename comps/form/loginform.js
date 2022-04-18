@@ -6,7 +6,7 @@ import {useRouter} from 'next/router'
 const loginForm = () => {
   // const router = useRouter();
   const onSubmit = (e)=>{
-     if(!name){
+     if(!Name){
        alert('Please input Reg Number')
       } if(!password){
         alert('Please input Password')
@@ -24,10 +24,10 @@ const loginForm = () => {
       <div className={styles.loginhead}><h3>Login</h3></div>
       
          <div className={styles.inputt}>
-       <input className={styles.input} value="name" placeholder='name' type='text' required/>
+       <input className={styles.input} value="Name" placeholder='name' type='text' required/>
        </div>
         <div className={styles.inputt}>
-       <input className={styles.input} value="passowrd" placeholder='Password' type='password' required/>
+       <input className={styles.input} value="password" placeholder='Password' type='password' required/>
     </div>
      
     <div className={styles.btnlogcon}>

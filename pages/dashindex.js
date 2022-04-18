@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Mainnav from '../comps/mainnav'
 import Navbar from '../comps/sidenavbar/sidenavbar'
-import Headers from '../comps/header/Header'
 import Content from '../comps/content/content'
 const Dashboard = () => {
     return (  
@@ -14,7 +13,6 @@ const Dashboard = () => {
         <div>
             <div>
                 <Navbar/>
-                <Headers/>
                 <Content/>
                 </div>
              </div>

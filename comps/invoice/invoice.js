@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from '../invoice/invoice.module.css'
 import Nameinvoice from '../invoice/nameinvoice'
 import Details from '../invoice/Details'
 const invoice = () => {

@@ -6,7 +6,6 @@ import { useRouter } from 'next/router'
 const form =()=>{
     const router = useRouter();
     const [Name,setName] = useState('')
-    const [number,setNumber] = useState('')
     const [password, setPassword] = useState(' ')
     const [checkbox, setCheckbox] = useState(false)  
     const [showForm, setShowForm] = useState(true)
@@ -15,8 +14,6 @@ const form =()=>{
         e.preventDefault()
         if(!Name) {   
             alert('There is an empty field') 
-        } if(!number){
-            alert('There is an empty field')
         } if(!password){
             alert('There is an empty field')
         } if(!checkbox){
@@ -47,9 +44,6 @@ const form =()=>{
         <input value={Name} type='text' className={styles.input} onChange={(e)=>setName(e.target.value)} placeholder='Name' required/>
     </div>
     <div className={styles.iinput}>
-        <input value={number} type='number' className={styles.input} onChange={(e)=>setNumber(e.target.value)} placeholder='Registration Number' required/>
-    </div>
-    <div className={styles.iinput}>
         <input value={password} type='password' onChange={(e)=>setPassword(e.target.value)} className={styles.input} placeholder='Password' required/>
     </div>
  <div className={styles.checked}>
@@ -65,19 +59,12 @@ const form =()=>{
 </div> 
          )
        :  (
-   <Loginform RegNumber={number} password={password} />   )  }
+   <Loginform/>   )  }
    {/* </>
     ) */}
      </>  
     )
 }
-    async function getStaticProps(context){
-         const res = await fetch("https://localhost:3000/api/Form");
-         const Form = await res.json();
 
-         return {
-             props: {Form}
-         }
-    };
 
 export default form 
