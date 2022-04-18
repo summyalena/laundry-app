@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Footer from '../comps/footer/footregister'
 import LoginForm from '../comps/form/loginform'
-import styles from '../comps/Form/loginform.module.css'
+import styles from '../comps/form/loginform.module.css'
 const login = () => {
     return (
       <>
