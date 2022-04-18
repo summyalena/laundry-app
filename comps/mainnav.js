@@ -2,8 +2,6 @@ import React from 'react';
 import {useState} from 'react'
 import {Link} from 'react-scroll'
 import {Transition} from '@headlessui/react'
-import {useRouter} from 'next/router'
-import NextLink from 'next/link'
 
 function Mainnav() {
       const [isOpen, setIsOpen]= useState(false);
