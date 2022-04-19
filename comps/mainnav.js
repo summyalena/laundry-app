@@ -8,7 +8,7 @@ import AuthContext from '../stores/authContext'
 function Mainnav() {
       const [isOpen, setIsOpen]= useState(false);
       // we are add AuthContext to the useContext hook cux that's where we want to collect our data from
-      const {user,login} = useContext(AuthContext)
+      const {user,login, logout} = useContext(AuthContext)
       console.log(user);
   return (
         <div>
@@ -40,7 +40,10 @@ function Mainnav() {
                                      className="hover:text-white-600 text-green-500 cursor-pointer">Contact</Link>
                                       <li onClick={login} duration={100} smooth={true} offset={50}
                                      className="hover:text-white text-green-500 cursor-pointer">Login/SignUp</li>
+                                     <li onClick={logout} duration={100} smooth={true} offset={50}
+                                     className="hover:text-white text-green-500 cursor-pointer">Log out</li>
                                     </div>
+
                                     </div>
                                     {/* div for the links */}
 
@@ -129,9 +132,9 @@ function Mainnav() {
                    smooth={true} offset={500} duration={500}>Contact</Link>
 
                    <li className="hover:bg-[#124] hover:opacity-50 text-base rounded-md p-3 hover:text-white text-[#F00] font-size-10"
-                   
                    smooth={true} offset={500} onClick={login} duration={500}>Login/Signup</li>
-               
+                    <li onClick={logout} duration={100} smooth={true} offset={50}
+                 className="hover:text-white text-green-500 cursor-pointer">Log out</li>
                </div>
                </div>) 
                        }          
