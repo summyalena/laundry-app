@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '../comps/Layout'
+import {AuthContextProvider} from '../stores/authContext'
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -9,10 +10,12 @@ function MyApp({ Component, pageProps }) {
             <link href="/dist/output.css" rel="stylesheet"/>
          <meta name='viewport' content='width=device-width, initial-scale=1'/>
         </Head>
+        
+        <AuthContextProvider>
    <Layout>
     <Component {...pageProps}/> 
     </Layout> 
-    
+       </AuthContextProvider>
     </>
     )
 }
